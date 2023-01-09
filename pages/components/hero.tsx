@@ -1,8 +1,10 @@
+import "../../styles/hero.css"
+
 const Hero = () => {
 
     return (
         <>
-            <h1>hello dear</h1>
+
         </>
     )
 }
