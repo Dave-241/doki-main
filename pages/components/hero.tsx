@@ -1,4 +1,3 @@
-import "../../styles/hero.css"
 
 const Hero = () => {
 
