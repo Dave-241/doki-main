@@ -40,13 +40,16 @@ const Nav = () => {
                 </div>
             </div>
             {/* mobile ctn */}
-            <a href="" className="mob_ctn">JOIN THE WAITLIST</a>
+            <div className="mob_sec_wrap">
+                <a href="" className="mob_ctn">JOIN THE WAITLIST</a>
 
-            <div className="mob_ham_wrap" onClick={navshow}>
-                <div className="ham"></div>
-                <div className="ham" ></div>
-                <div className="ham"></div>
+                <div className="mob_ham_wrap" onClick={navshow}>
+                    <div className="ham"></div>
+                    <div className="ham" ></div>
+                    <div className="ham"></div>
+                </div>
             </div>
+
 
             {/* mobile navgiation menu */}
             <div className="mob_wrap" style={{ display: display }}>

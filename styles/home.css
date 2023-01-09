@@ -129,6 +129,10 @@ body {
         padding: 0 2%;
     }
 
+    .logo_wrapper {
+        border: 1px solid blue;
+    }
+
     .logo_text_wrap1 {
         font-size: 20px;
         height: 100%;
@@ -148,9 +152,8 @@ body {
     }
 
     .mob_ham_wrap {
-        border: 1px solid #6B006B;
         width: 14px;
-        height: 70%;
+        height: 100%;
         border-radius: 5px;
         display: flex;
         flex-direction: column;
@@ -165,7 +168,15 @@ body {
         height: 25%;
         background-color: #6B006B;
         border: 3px solid white;
-        margin-bottom: 20px;
+    }
+
+    .mob_sec_wrap {
+        width: 70%;
+        height: 80%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     /* mobile menu list items */
@@ -215,6 +226,7 @@ body {
         width: 90%;
         text-align: center;
         padding-bottom: 10px;
+        margin-bottom: 20px;
         color: white;
     }
 

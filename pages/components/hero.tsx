@@ -3,7 +3,7 @@ const Hero = () => {
 
     return (
         <>
-
+            <p>kjij</p>
         </>
     )
 }
