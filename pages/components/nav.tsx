@@ -18,12 +18,12 @@ const Nav = () => {
         <nav className="nav">
             {/* logo */}
             <a href="/" className="logo_wrapper">
-                <a href="/" className="logo_text_wrap1">
+                <div className="logo_text_wrap1">
                     <span className="logo_text1">DO</span>
-                </a>
-                <a href="/" className="logo_text_wrap2">
+                </div>
+                <div className="logo_text_wrap2">
                     <span className="logo_text2">KI</span>
-                </a>
+                </div>
             </a>
 
             {/* navigation menu */}
