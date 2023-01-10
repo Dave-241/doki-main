@@ -142,7 +142,6 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: 4vh
     }
 
     .Hero_img_wrap {
@@ -155,6 +154,7 @@
         align-items: center;
         width: 100%;
         padding: 0 20%;
+        margin-bottom: 25px;
     }
 
 
@@ -169,6 +169,7 @@
         width: 100%;
         text-align: center;
         font-size: 30px;
+        margin-bottom: 30px;
     }
 
     .Hero_head2 {
@@ -203,6 +204,7 @@
         font-size: 20px;
         text-align: center;
         width: 100%;
+        margin-bottom: 25px;
     }
 
     .Hero_input_wrap {
@@ -211,6 +213,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin-bottom: 18px;
     }
 
     .Hero_input {
