@@ -18,12 +18,12 @@ const Nav = () => {
         <nav className="nav">
             {/* logo */}
             <a href="/" className="logo_wrapper">
-                <div className="logo_text_wrap1">
+                <a href="/" className="logo_text_wrap1">
                     <span className="logo_text1">DO</span>
-                </div>
-                <div className="logo_text_wrap2">
+                </a>
+                <a href="/" className="logo_text_wrap2">
                     <span className="logo_text2">KI</span>
-                </div>
+                </a>
             </a>
 
             {/* navigation menu */}
@@ -36,12 +36,12 @@ const Nav = () => {
                 </div>
                 {/* desktop ctn */}
                 <div className="ctn_wrapper">
-                    <a href="" className="ctn">Join The Waitlist</a>
+                    <a href="/" className="ctn">Join The Waitlist</a>
                 </div>
             </div>
             {/* mobile ctn */}
             <div className="mob_sec_wrap">
-                <a href="" className="mob_ctn">JOIN THE WAITLIST</a>
+                <a href="/" className="mob_ctn">JOIN THE WAITLIST</a>
 
                 <div className="mob_ham_wrap" onClick={navshow}>
                     <div className="ham"></div>

@@ -87,6 +87,10 @@
     font-size: 15px;
 }
 
+.Hero_input:active {
+    border: 1px solid #402B40;
+}
+
 .Hero_btn {
     width: 38%;
     height: 90%;
@@ -97,6 +101,11 @@
     font-weight: 400;
     font-size: 15px;
     border: none;
+    cursor: pointer;
+}
+
+.Hero_btn:hover {
+    background-color: #402B40;
 }
 
 .Hero_excerpt2 {
@@ -237,7 +246,11 @@
         font-weight: 400;
         font-size: 12px;
         border: none;
+        cursor: pointer;
     }
+
+
+
 
     .Hero_excerpt2 {
         color: #402B40;
