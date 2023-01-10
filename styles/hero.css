@@ -130,10 +130,10 @@
         width: 100%;
         height: auto;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         margin-top: 25px;
+        gap: 4vh;
     }
 
 
@@ -242,7 +242,6 @@
         word-spacing: 1px;
         text-align: center;
         width: 100%;
-        border: 1px solid red;
         font-family: 'lato', sans-serif;
 
     }
