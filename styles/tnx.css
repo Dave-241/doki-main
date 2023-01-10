@@ -224,3 +224,132 @@
 .tnx_footer_text {
     color: #402B40;
 }
+
+@media only screen and (max-width: 800px) {
+    .tnx_all_wrap {
+        width: 100%;
+        height: auto;
+        margin-top: 30px;
+        display: flex;
+    }
+
+
+    .tnx_text_wrap {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tnx_img_wrap {
+        display: none;
+    }
+
+
+
+    .tnx_demercation1 {
+        margin-bottom: 60px;
+    }
+
+    .tnx_color {
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        color: #6B006B;
+    }
+
+    .tnx_header {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+    }
+
+    .tnx_excerpt {
+        padding-top: 10px;
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+        color: #402B40;
+    }
+
+    .ref_code {
+        color: #6B006B;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+    }
+
+    .tnx_copy {
+        border: 1px solid #6B006B;
+        padding: 2px 10px;
+        cursor: pointer;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+    }
+
+    .tnx_excerpt2 {
+        padding-bottom: 10px;
+        text-align: center;
+        color: #402B40;
+    }
+
+    .check_input_wrap {
+        width: 100%;
+        height: 35px;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .check_ref {
+        height: 100%;
+        width: 60%;
+        padding: 0 10px;
+        font-size: 15px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+    }
+
+    .check_ctn {
+        width: 35%;
+        height: 90%;
+        border: none;
+        background-color: #6B006B;
+        color: white;
+        font-weight: 400;
+        font-family: 'Lato', sans-serif;
+        border-radius: 5px;
+    }
+
+}
+
+
+/* socail icons for the tnx page */
+.tnx_social_wrap {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tnx_social_icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+
+.tnx_soical_link {
+    color: #6B006B;
+}
+
+.tnx_footer {
+    color: #6B006B;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    width: fit-content;
+}
+
+.tnx_footer_text {
+    color: #402B40;
+}
