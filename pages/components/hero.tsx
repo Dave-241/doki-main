@@ -3,7 +3,7 @@ import Heroimg from "../../public/H_image.png"
 import Head_img from "../../public/Head_img.png"
 
 
-const Hero = (props) => {
+const Hero = (props: { joined: any; setemail: any; err: any; setjoin_text: any; }) => {
     // destructure props
     const { joined, setemail, err, setjoin_text } = props
 
