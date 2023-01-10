@@ -139,10 +139,10 @@
 
     .Hero_txt_wrap {
         width: 100%;
-        height: auto;
+        height: 80vh;
         display: flex;
         flex-direction: column;
-        gap: 15px;
+        justify-content: space-between;
     }
 
     .Hero_img_wrap {
