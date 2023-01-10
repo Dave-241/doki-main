@@ -99,6 +99,10 @@ body {
     text-transform: uppercase;
 }
 
+.ctn_wrapper:hover {
+    background-color: #402B40;
+}
+
 .mob_ctn {
     display: none;
 }

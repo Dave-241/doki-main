@@ -17,14 +17,14 @@ const Nav = () => {
     return (
         <nav className="nav">
             {/* logo */}
-            <div className="logo_wrapper">
+            <a href="/" className="logo_wrapper">
                 <div className="logo_text_wrap1">
                     <span className="logo_text1">DO</span>
                 </div>
                 <div className="logo_text_wrap2">
                     <span className="logo_text2">KI</span>
                 </div>
-            </div>
+            </a>
 
             {/* navigation menu */}
             <div className="nav_menu">

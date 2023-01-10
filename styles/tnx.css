@@ -94,6 +94,12 @@
     font-weight: 400;
     font-family: 'Lato', sans-serif;
     border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.check_ctn:hover {
+    background-color: #402B40;
 }
 
 
@@ -315,6 +321,8 @@
         font-weight: 400;
         font-family: 'Lato', sans-serif;
         border-radius: 5px;
+        cursor: pointer;
+
     }
 
 }
