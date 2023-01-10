@@ -16,8 +16,13 @@ const Hero = () => {
                         <span className="Hero_head2">Testers. <Image className="Head_img" src={Head_img} alt="head_image" /> </span>
                     </h1>
 
+                    <div className="mob_hero_img_wrap">
+                        <Image className="mob_hero_img" src={Heroimg} alt="Hero image" />
+                    </div>
                     {/* hero excerpt text */}
                     <p className="Hero_excerpt">Be the first to know when we launch</p>
+
+
 
                     {/*collect user emails */}
                     <div className="Hero_input_wrap">
