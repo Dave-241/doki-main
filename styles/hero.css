@@ -202,6 +202,7 @@
         font-weight: 500;
         font-size: 20px;
         text-align: center;
+        width: 100%;
     }
 
     .Hero_input_wrap {
@@ -240,6 +241,8 @@
         font-weight: 400;
         word-spacing: 1px;
         text-align: center;
+        width: 100%;
+        border: 1px solid red;
         font-family: 'lato', sans-serif;
 
     }
