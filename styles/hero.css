@@ -87,7 +87,7 @@
     font-size: 15px;
 }
 
-.Hero_input:active {
+.Hero_input:focus {
     border: 1px solid #402B40;
 }
 
@@ -234,6 +234,11 @@
         border-radius: 4px;
         padding: 0 7px;
         font-size: 15px;
+    }
+
+
+    .Hero_input:focus {
+        border: 1px solid #402B40;
     }
 
     .Hero_btn {

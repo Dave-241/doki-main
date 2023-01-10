@@ -85,6 +85,10 @@
     font-weight: 400;
 }
 
+.check_ref:focus {
+    border: 1px solid #402B40;
+}
+
 .check_ctn {
     width: 35%;
     height: 90%;
@@ -182,6 +186,10 @@
         font-size: 15px;
         font-family: 'Lato', sans-serif;
         font-weight: 400;
+    }
+
+    .check_ref:focus {
+        border: 1px solid #402B40;
     }
 
     .check_ctn {
@@ -323,6 +331,10 @@
         border-radius: 5px;
         cursor: pointer;
 
+    }
+
+    .check_ctn:hover {
+        background-color: #402B40;
     }
 
 }

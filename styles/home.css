@@ -148,6 +148,10 @@ body {
     }
 
 
+    .mob_ctn:hover {
+        background-color: #402B40;
+    }
+
     body {
         padding: 0 2%;
     }
