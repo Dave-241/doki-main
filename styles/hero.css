@@ -130,10 +130,10 @@
         width: 100%;
         height: auto;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         flex-direction: column;
         margin-top: 25px;
-        gap: 4vh;
     }
 
 
@@ -142,7 +142,7 @@
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 4vh
     }
 
     .Hero_img_wrap {
@@ -242,6 +242,7 @@
         word-spacing: 1px;
         text-align: center;
         width: 100%;
+        border: 1px solid red;
         font-family: 'lato', sans-serif;
 
     }
