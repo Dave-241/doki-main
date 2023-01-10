@@ -326,10 +326,10 @@
     bottom: 10px;
     left: 50%;
     width: auto;
-    transform: translate(-50%);
     display: flex;
     align-items: center;
     gap: 20px;
+    border: none;
 }
 
 .tnx_social_icons {
@@ -352,4 +352,19 @@
 
 .tnx_footer_text {
     color: #402B40;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .tnx_social_wrap {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: none;
+
+    }
 }
