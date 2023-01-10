@@ -58,7 +58,12 @@ const Port = () => {
                         <p className="footer_text">ut aliquip ex consequat</p>
 
                         <div className="social_icons">
-                            <Twitter />  <Linkedin /> <Facebook /> <Instagram />
+                            <a className="soical_link" href=""><Twitter /></a>
+                            <a className="soical_link" href="">   <Linkedin /></a>
+                            <a className="soical_link" href=""> <Facebook /></a>
+                            <a className="soical_link" href=""><Instagram /></a>
+
+
                         </div>
                     </div>
 
