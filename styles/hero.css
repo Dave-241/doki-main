@@ -12,7 +12,8 @@
 
 .Hero_txt_wrap {
     width: 55%;
-    height: 70%;
+    height: auto;
+    gap: 20px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;

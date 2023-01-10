@@ -5,20 +5,22 @@
     margin: 0;
     padding: 0;
     outline: none;
+
 }
 
 body {
     width: 100vw;
     min-height: 100vh;
+    padding: 0 8%;
     display: flex;
     justify-content: center;
-    padding: 0 8%;
+    overflow-x: hidden;
 }
 
 .wrapper {
-    border: 1px solid red;
     height: 100%;
     width: 100%;
+    border: 1px solid red;
 }
 
 /* navigation styling */
@@ -116,6 +118,10 @@ body {
 
 /* mobile nav styling */
 @media only screen and (max-width: 800px) {
+    body {
+        overflow-x: visible;
+
+    }
 
     .wrapper {
         position: relative;
