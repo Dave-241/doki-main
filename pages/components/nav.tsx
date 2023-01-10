@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { XLg } from "react-bootstrap-icons";
+import Link from 'next/link';
+
 
 
 const Nav = () => {
@@ -17,31 +19,31 @@ const Nav = () => {
     return (
         <nav className="nav">
             {/* logo */}
-            <a href="/" className="logo_wrapper">
+            <Link href="/" className="logo_wrapper">
                 <div className="logo_text_wrap1">
                     <span className="logo_text1">DO</span>
                 </div>
                 <div className="logo_text_wrap2">
                     <span className="logo_text2">KI</span>
                 </div>
-            </a>
+            </Link>
 
             {/* navigation menu */}
             <div className="nav_menu">
 
                 <div className="menu">
-                    <li style={{ color: "#6B006B" }}>Home</li>
-                    <li>FAQ</li>
-                    <li>Blog</li>
+                    <Link href="#" className="menu_styles" style={{ color: "#6B006B" }}>Home</Link>
+                    <Link href="#" className="menu_styles" >FAQ</Link>
+                    <Link href="#" className="menu_styles" >Blog</Link>
                 </div>
                 {/* desktop ctn */}
                 <div className="ctn_wrapper">
-                    <a href="/" className="ctn">Join The Waitlist</a>
+                    <Link href="/" className="ctn">Join The Waitlist</Link>
                 </div>
             </div>
             {/* mobile ctn */}
             <div className="mob_sec_wrap">
-                <a href="/" className="mob_ctn">JOIN THE WAITLIST</a>
+                <Link href="/" className="mob_ctn">JOIN THE WAITLIST</Link>
 
                 <div className="mob_ham_wrap" onClick={navshow}>
                     <div className="ham"></div>

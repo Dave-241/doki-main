@@ -8,6 +8,7 @@
 
 }
 
+
 body {
     width: 100vw;
     min-height: 100vh;
@@ -83,6 +84,11 @@ body {
     justify-content: space-between;
     font-weight: 500;
     font-size: 17px;
+    color: black;
+}
+
+.menu_styles {
+    color: black;
 }
 
 .ctn_wrapper {
