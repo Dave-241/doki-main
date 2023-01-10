@@ -190,3 +190,37 @@
     }
 
 }
+
+
+/* socail icons for the tnx page */
+.tnx_social_wrap {
+    border: 1px solid;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.tnx_social_icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+
+}
+
+.tnx_soical_link {
+    color: #6B006B;
+}
+
+.tnx_footer {
+    color: #6B006B;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+
+.tnx_footer_text {
+    color: #402B40;
+}

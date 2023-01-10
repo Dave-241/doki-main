@@ -1,6 +1,7 @@
 import Nav from "./components/nav";
 import Image from "next/image"
 import Heroimg from "../public/H_image.png"
+import { Facebook, Instagram, Linkedin, Twitter } from "react-bootstrap-icons";
 
 const Tnn = () => {
 
@@ -41,6 +42,24 @@ const Tnn = () => {
                 </div>
 
 
+
+            </div>
+            {/* socail wrap in the porfolio section */}
+            <div className="tnx_social_wrap">
+                <h1 className="tnx_footer">Doki</h1>
+
+                <div className="tnx_mob_wrap_footter">
+                    <p className="tnx_footer_text">ut aliquip ex consequat</p>
+
+                    <div className="tnx_social_icons">
+                        <a className="tnx_soical_link" href=""><Twitter /></a>
+                        <a className="tnx_soical_link" href="">   <Linkedin /></a>
+                        <a className="tnx_soical_link" href=""> <Facebook /></a>
+                        <a className="tnx_soical_link" href=""><Instagram /></a>
+
+
+                    </div>
+                </div>
 
             </div>
         </body>
