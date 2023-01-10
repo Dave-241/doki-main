@@ -33,7 +33,8 @@ a {
 /* port icon wrap and more details */
 .each_wrap {
     width: 30%;
-    height: 80%;
+    height: auto;
+    gap: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
