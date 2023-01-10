@@ -7,7 +7,8 @@ const Tnn = () => {
 
 
     return (
-        <> <body>
+        <>
+
             <div className="wrapper">
                 <Nav />
 
@@ -62,7 +63,7 @@ const Tnn = () => {
                 </div>
 
             </div>
-        </body>
+
 
         </>
     )
