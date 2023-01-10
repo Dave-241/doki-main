@@ -128,13 +128,13 @@ a {
 
     /* port icon wrap and more details */
     .each_wrap {
-        width: 80%;
+        width: 60%;
         height: auto;
         gap: 8px;
         display: flex;
         flex-direction: column;
         align-items: center;
-
+        text-align: center;
     }
 
     .port_icon_wrap {
