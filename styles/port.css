@@ -130,7 +130,7 @@ a {
     .each_wrap {
         width: 60%;
         height: auto;
-        gap: 8px;
+        margin-bottom: 15px;
         display: flex;
         flex-direction: column;
         align-items: center;
