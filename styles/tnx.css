@@ -109,7 +109,6 @@
     .tnx_text_wrap {
         width: 100%;
         height: auto;
-        gap: 60px;
         display: flex;
         flex-direction: column;
     }
@@ -119,6 +118,10 @@
     }
 
 
+
+    .tnx_demercation1 {
+        margin-bottom: 60px;
+    }
 
     .tnx_color {
         font-family: 'Lato', sans-serif;
