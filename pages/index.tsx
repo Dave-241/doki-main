@@ -36,7 +36,8 @@ export default function Home() {
     } else {
 
       if (localStorage.getItem("yes")) {
-        router.push("/tnnn")
+        // router.push("/tnnn")
+
       } else {
         // make a post request
         // axios.post('/user', {
@@ -64,7 +65,7 @@ export default function Home() {
 
     if (yes) {
       console.log("working");
-      router.push("/tnnn")
+      // router.push("/tnnn")
     }
   }, [])
 
