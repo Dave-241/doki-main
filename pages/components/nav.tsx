@@ -6,14 +6,14 @@ import Link from 'next/link';
 
 const Nav = () => {
 
-    const [display, setDisplay] = useState("none")
+    const [width, setwidth] = useState("0")
 
     const navshow = () => {
-        setDisplay("flex")
+        setwidth("100%")
     }
 
     const navhide = () => {
-        setDisplay("none")
+        setwidth("0%")
     }
 
     return (
@@ -54,10 +54,10 @@ const Nav = () => {
 
 
             {/* mobile navgiation menu */}
-            <div className="mob_wrap" style={{ display: display }}>
+            <div className="mob_wrap" style={{ width: width }}>
                 <div className="mob_exit_wrap" >
                     <div className="mob_exit" onClick={navhide}>
-                        <XLg />
+                        <XLg className="exit" />
                     </div>
                 </div>
 
