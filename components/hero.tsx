@@ -1,6 +1,6 @@
 import Image from "next/image"
-import Heroimg from "../../public/H_image.png"
-import Head_img from "../../public/Head_img.png"
+import Heroimg from "../public/H_image.png"
+import Head_img from "../public/Head_img.png"
 
 
 const Hero = (props: { joined: any; setemail: any; err: any; setjoin_text: any; }) => {
@@ -12,6 +12,11 @@ const Hero = (props: { joined: any; setemail: any; err: any; setjoin_text: any; 
         <>
             <div className="Hero_wrap">
                 <div className="Hero_txt_wrap">
+
+
+                    <div className="mob_hero_img_wrap">
+                        <Image className="mob_hero_img" src={Heroimg} alt="Hero image" priority placeholder="blur" />
+                    </div>
                     {/* hero header text */}
                     <h1 className="Hero_head">
                         <span className="Hero_head1">DOKI,</span>
@@ -19,9 +24,6 @@ const Hero = (props: { joined: any; setemail: any; err: any; setjoin_text: any; 
                         <span className="Hero_head2">Testers. <Image className="Head_img" src={Head_img} alt="head_image" /> </span>
                     </h1>
 
-                    <div className="mob_hero_img_wrap">
-                        <Image className="mob_hero_img" src={Heroimg} alt="Hero image" priority placeholder="blur" />
-                    </div>
                     {/* hero excerpt text */}
                     <p className="Hero_excerpt">Be the first to know when we launch</p>
 

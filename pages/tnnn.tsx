@@ -1,4 +1,4 @@
-import Nav from "./components/nav";
+import Nav from "../components/nav";
 import Image from "next/image"
 import Heroimg from "../public/H_image.png"
 import { Facebook, Instagram, Linkedin, Twitter } from "react-bootstrap-icons";
@@ -9,14 +9,23 @@ const Tnn = () => {
     return (
         <>
 
-            <div className="wrapper">
+            <div className="wrapper second_all_wrapper">
                 <Nav />
 
                 {/* thank you for joinging our waitlist page design */}
 
+
+
                 <div className="tnx_all_wrap">
 
+
                     <div className="tnx_text_wrap">
+
+                        <div className="mob_hero_img_wrap">
+                            <Image className="mob_hero_img" src={Heroimg} alt="Hero image" priority placeholder="blur" />
+                        </div>
+
+
                         <div className="tnx_demercation1">
                             <h1 className="tnx_header"> <span className="tnx_color">Thank you!
                             </span>  for joining our waitlist.</h1>

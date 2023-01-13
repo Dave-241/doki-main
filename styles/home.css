@@ -135,7 +135,6 @@ body {
 @media only screen and (max-width: 800px) {
     body {
         overflow-x: visible;
-        position: relative;
     }
 
     /* .wrapper {
@@ -164,7 +163,7 @@ body {
     }
 
     body {
-        padding: 0 2%;
+        padding: 0 4%;
     }
 
 

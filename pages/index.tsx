@@ -2,9 +2,9 @@
 import { Inter } from '@next/font/google'
 import axios from "axios"
 import { useEffect, useState } from 'react'
-import Nav from './components/nav'
-import Hero from './components/hero'
-import Port from './components/portfolio'
+import Nav from '../components/nav'
+import Hero from '../components/hero'
+import Port from '../components/portfolio'
 import Router, { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })

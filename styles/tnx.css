@@ -108,6 +108,23 @@
 
 
 @media only screen and (max-width: 800px) {
+
+    .mob_hero_img_wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 20%;
+        margin-bottom: 25px;
+    }
+
+
+    .mob_hero_img {
+        width: 100%;
+        height: 100%;
+    }
+
+
     .tnx_all_wrap {
         width: 100%;
         height: auto;
@@ -376,15 +393,21 @@
 
 
 @media only screen and (max-width: 800px) {
+    .second_all_wrapper {
+        position: relative;
+        padding-bottom: 100px;
+    }
+
     .tnx_social_wrap {
         position: absolute;
-        bottom: 10px;
+        bottom: 0px;
         left: 50%;
         width: 70%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         border: none;
-
     }
+
+
 }
