@@ -76,7 +76,10 @@ export default function Home() {
 
   return (
     <>
+      <head>
+        <title>Doki Waitlist</title>
 
+      </head>
       <div className="wrapper">
         <Nav />
         <Hero
