@@ -411,3 +411,128 @@
 
 
 }
+
+/* modal box desktop design */
+body {
+    position: relative;
+}
+
+.tnx_all_modal {
+    background-color: rgba(0, 0, 0, 0.427);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    transition: 3s;
+}
+
+
+
+.tnx_modal_wrap {
+    background-color: white;
+    width: 40%;
+    height: 40%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 4%;
+    font-family: 'Lato', sans-serif;
+}
+
+.tnx_modal_num_wrap {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.tnx_modal_num {
+    font-weight: 700;
+
+}
+
+.tnx_modal_num2 {
+    display: flex;
+}
+
+.tnx_modal_num2_deco {
+    width: 20px;
+    height: 20px;
+    background-color: #30AE0F;
+    border-radius: 100%;
+    margin-left: 10px;
+}
+
+.tnx_modal_ref_deco {
+    color: #30AE0F;
+}
+
+.tnx_modal_num_deco {
+    color: #6B006B;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .tnx_all_modal {
+        background-color: rgba(0, 0, 0, 0.427);
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        transition: 3s;
+    }
+
+
+
+    .tnx_modal_wrap {
+        background-color: white;
+        width: 90%;
+        height: 60%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 4%;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .tnx_modal_num_wrap {
+        text-align: center;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .tnx_modal_num {
+        font-weight: 700;
+
+    }
+
+    .tnx_modal_num2 {
+        display: flex;
+    }
+
+    .tnx_modal_num2_deco {
+        width: 20px;
+        height: 20px;
+        background-color: #30AE0F;
+        border-radius: 100%;
+        margin-left: 10px;
+    }
+
+    .tnx_modal_ref_deco {
+        color: #30AE0F;
+    }
+
+    .tnx_modal_num_deco {
+        color: #6B006B;
+    }
+
+}

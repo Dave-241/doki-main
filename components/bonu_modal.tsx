@@ -16,7 +16,7 @@ const Bonus_modal = (props: { setdisplay: any; }) => {
 
                     <div className="bonus_list_wrap">
                         <div className="bonus_li"> <div className="bonus_list_deco"></div> <p className="bonus_text">
-                            As a <span className="bonus_deco" > designer; </span> you get 10 free User testing or your project
+                            As a <span className="bonus_deco" > designer; </span> you get 4 free User testing for your project per 10 refferals.
                         </p>  </div>
 
                         <div className="bonus_li"> <div className="bonus_list_deco"></div> <p className="bonus_text">

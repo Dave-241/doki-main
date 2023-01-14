@@ -2,8 +2,18 @@ import Nav from "../components/nav";
 import Image from "next/image"
 import Heroimg from "../public/H_image.png"
 import { Facebook, Instagram, Linkedin, Twitter } from "react-bootstrap-icons";
+import { useState } from "react";
 
 const Tnn = () => {
+    const [ref_modal, setRef_modal] = useState(false)
+
+    const hide_ref_modal = () => {
+        setRef_modal(false)
+    }
+
+    const show_ref_modal = () => {
+        setRef_modal(true)
+    }
 
 
     return (
@@ -39,7 +49,7 @@ const Tnn = () => {
 
                             <div className="check_input_wrap">
                                 <input type="email" placeholder="Enter your email address" className="check_ref" />
-                                <button className="check_ctn">VIEW REFERRALS</button>
+                                <button className="check_ctn" onClick={show_ref_modal}>VIEW REFERRALS</button>
                             </div>
                         </div>
 
@@ -73,7 +83,26 @@ const Tnn = () => {
 
             </div>
 
+            {
+                (ref_modal) ? (
+                    <div className="tnx_all_modal" onClick={hide_ref_modal}>
+                        <div className="tnx_modal_wrap">
+                            <h3 className="tnx_modal_mail">Hey isibordavis@gmail.com</h3>
+                            <p className="tnx_modal_excerpt">So far you have reffered;</p>
+                            <div className="tnx_modal_num_wrap">
+                                <p className="tnx_modal_num">50 <span className="tnx_modal_num_deco">Dokites</span></p>
 
+                                <div className="tnx_modal_num2">
+                                    <p>Keep reffering to increae your bonuses!!</p>
+                                    <div className="tnx_modal_num2_deco"></div>
+                                </div>
+                            </div>
+
+                            <h4 className="tnx_modal_ref">Refer someone <span className="tnx_modal_ref_deco">today!</span></h4>
+                        </div>
+                    </div>
+                ) : null
+            }
         </>
     )
 }
