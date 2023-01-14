@@ -2,10 +2,12 @@ import Nav from "../components/nav";
 import Image from "next/image"
 import Heroimg from "../public/H_image.png"
 import { Facebook, Instagram, Linkedin, Twitter } from "react-bootstrap-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Tnn = () => {
     const [ref_modal, setRef_modal] = useState(false)
+    const [ref_link, setRef_link] = useState(' bitly/doki20%/signup-meta45')
+    const [copy, setCopy] = useState("copy")
 
     const hide_ref_modal = () => {
         setRef_modal(false)
@@ -14,6 +16,19 @@ const Tnn = () => {
     const show_ref_modal = () => {
         setRef_modal(true)
     }
+
+    const copy_clipboard = () => {
+        navigator.clipboard.writeText(ref_link);
+        setCopy('copied')
+    }
+
+    const reverse_copy = () => {
+        setCopy('copy')
+    }
+
+    useEffect(() => {
+        setTimeout(reverse_copy, 3000)
+    }, [copy])
 
 
     return (
@@ -41,7 +56,7 @@ const Tnn = () => {
                             </span>  for joining our waitlist.</h1>
 
                             <p className="tnx_excerpt">Your referral code is <span className="ref_code">
-                                bitly/doki20%/signup-meta45</span> <button className="tnx_copy">copy</button> </p>
+                                {ref_link}</span> <button className="tnx_copy" onClick={copy_clipboard}>{copy}</button> </p>
                         </div>
 
                         <div className="tnx_demercation2">

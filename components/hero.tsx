@@ -40,7 +40,7 @@ const Hero = (props: { joined: any; setemail: any; err: any; setjoin_text: any; 
 
                     {/*collect user emails */}
                     <div className="Hero_input_wrap">
-                        <input type="text" className="Hero_input" placeholder="Enter your email address" onChange={(e) => setemail(e.target.value)} />
+                        <input type="email" autoComplete="email" className="Hero_input" placeholder="Enter your email address" onChange={(e) => setemail(e.target.value)} />
                         <button className="Hero_btn" onClick={joined}>{setjoin_text}</button>
                     </div>
                     {/* hero excerpt two */}
