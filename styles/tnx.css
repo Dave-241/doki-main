@@ -495,7 +495,7 @@ body {
     .tnx_modal_wrap {
         background-color: white;
         width: 90%;
-        height: 60%;
+        height: 45%;
         border-radius: 15px;
         display: flex;
         flex-direction: column;

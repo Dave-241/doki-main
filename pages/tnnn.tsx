@@ -164,7 +164,7 @@ const Tnn = () => {
                                             <p className="tnx_modal_num">{ref_num} <span className="tnx_modal_num_deco">Dokites</span></p>
 
                                             <div className="tnx_modal_num2">
-                                                <p>Keep reffering to increae your bonuses!!</p>
+                                                <p>Keep reffering to increase your bonuses!!</p>
                                                 <div className="tnx_modal_num2_deco"></div>
                                             </div>
                                         </div>
