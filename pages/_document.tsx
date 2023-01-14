@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <head>
-        <title>this is doki</title>
+        <title>DOKI WAITLIST</title>
       </head>
       <body>
         <Main />

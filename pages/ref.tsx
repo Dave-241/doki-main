@@ -1,23 +1,26 @@
 import axios from "axios"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import Home from "."
 import Nav from "../components/nav"
 import Preloader from "../components/preLoader"
 
 
 const Ref = () => {
 
-    const [valid, setvalid] = useState("true")
+    const [valid, setvalid] = useState(true)
     const [ref, setref] = useState("")
 
     // next router
     const router = useRouter()
-    const { ref_id } = router.query
+    const { refid } = router.query
+
+
 
     useEffect(() => {
         // //      make a post request
-        // axios.post('/user', {
-        //     ref: ref_id
+        // axios.patch('https://doki-be.vercel.app/api/waitlist/verifyRefId', {
+        //     refId: refid
         // })
         //     .then(function (response) {
         //         console.log(response);
@@ -25,12 +28,13 @@ const Ref = () => {
         //     .catch(function (error) {
         //         console.log(error);
         //     });
+        setvalid(false)
     }, [])
 
     return (
         <>
             {
-                (valid) ? <Preloader /> : <Nav />
+                (valid) ? <Preloader /> : <Home refid={refid} />
             }
 
         </>
