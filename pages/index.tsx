@@ -14,7 +14,7 @@ export default function Home() {
   // set the input element
   const [email, setemail] = useState("")
   const [err, seterr] = useState("")
-  const [display, setdisplay] = useState(true)
+  const [display, setdisplay] = useState(false)
   const [join_text, setjoin_text] = useState("JOIN THE WAITLIST")
   const pattern = /^\S+@\S+\.\S+$/
   const router = useRouter()

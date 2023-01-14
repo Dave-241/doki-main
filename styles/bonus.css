@@ -18,6 +18,10 @@ body {
     transition: 3s;
 }
 
+.bonus_header {
+    text-align: center;
+}
+
 .bonus_wrap {
     background-color: white;
     width: 50%;
