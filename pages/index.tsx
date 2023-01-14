@@ -20,7 +20,7 @@ export default function Home(prop: { refid: any; }) {
   const [join_text, setjoin_text] = useState("JOIN THE WAITLIST")
   const pattern = /^\S+@\S+\.\S+$/
   const router = useRouter()
-  const domain = "http://localhost:3000/"
+  const domain = "https://doki-main.vercel.app/"
 
 
   // use useeffect to set the email onchange
@@ -66,7 +66,7 @@ export default function Home(prop: { refid: any; }) {
             localStorage.setItem("ref_id", ref_id)
             localStorage.setItem("yes", "checked")
             setjoin_text("JOIN THE WAITLIST")
-            // router.push("/tnnn")
+            router.push("/tnnn")
           }
 
         })
