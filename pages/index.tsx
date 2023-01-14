@@ -51,16 +51,22 @@ export default function Home(prop: { refid: any; }) {
           const id = response.data.refId
           const ref_id = domain + "ref?refid=" + id
           console.log(ref_id);
+
+
           if (response.status == 201) {
-            axios.patch('https://doki-be.vercel.app/api/waitlist/verifyRefId', {
-              refId: refid
-            })
-              .then(function (response) {
-                console.log(response);
+
+            if (refid) {
+
+              axios.patch('https://doki-be.vercel.app/api/waitlist/verifyRefId', {
+                refId: refid
               })
-              .catch(function (error) {
-                console.log(error);
-              });
+                .then(function (response) {
+                  console.log(response);
+                })
+                .catch(function (error) {
+                  console.log(error);
+                });
+            }
 
 
             localStorage.setItem("ref_id", ref_id)
@@ -71,9 +77,10 @@ export default function Home(prop: { refid: any; }) {
 
         })
         .catch(function (error) {
-          const msg = error.response
+          const msg = error.response.data.message
+          console.log();
+          setjoin_text("JOIN THE WAITLIST")
 
-          console.log(msg);
           if (msg == "Email already exist") {
             seterr("Email already exist")
           }
