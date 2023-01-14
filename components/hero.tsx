@@ -1,11 +1,20 @@
 import Image from "next/image"
 import Heroimg from "../public/H_image.png"
+import { useState } from "react"
+
 import Head_img from "../public/Head_img.png"
 
 
-const Hero = (props: { joined: any; setemail: any; err: any; setjoin_text: any; }) => {
+const Hero = (props: { joined: any; setemail: any; err: any; setjoin_text: any; setdisplay: any; }) => {
     // destructure props
-    const { joined, setemail, err, setjoin_text } = props
+    const { joined, setemail, err, setjoin_text, setdisplay } = props
+
+    const [width, setWidth] = useState("0%")
+
+    const showBonus = () => {
+        setdisplay(true)
+    }
+
 
 
     return (
@@ -37,7 +46,7 @@ const Hero = (props: { joined: any; setemail: any; err: any; setjoin_text: any; 
                     {/* hero excerpt two */}
                     <p style={{ color: "red", textAlign: "center" }}>{err}</p>
                     <p className="Hero_excerpt2">A unique referral code will be generated for you, explore the
-                        <span className="bonus_link" > bonuses </span>
+                        <span className="bonus_link" onClick={showBonus} > bonuses </span>
                         that awaits you when you join the waitlist and refer people.</p>
 
                 </div>

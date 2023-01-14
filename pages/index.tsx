@@ -6,6 +6,7 @@ import Nav from '../components/nav'
 import Hero from '../components/hero'
 import Port from '../components/portfolio'
 import Router, { useRouter } from 'next/router'
+import Bonus_modal from '../components/bonu_modal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,6 +14,7 @@ export default function Home() {
   // set the input element
   const [email, setemail] = useState("")
   const [err, seterr] = useState("")
+  const [display, setdisplay] = useState(true)
   const [join_text, setjoin_text] = useState("JOIN THE WAITLIST")
   const pattern = /^\S+@\S+\.\S+$/
   const router = useRouter()
@@ -59,6 +61,7 @@ export default function Home() {
 
 
 
+
   // useeffect to check storage function
   useEffect(() => {
     const yes = localStorage.getItem("yes")
@@ -81,9 +84,16 @@ export default function Home() {
           setemail={setemail}
           err={err}
           setjoin_text={join_text}
+          setdisplay={setdisplay}
         />
         <Port />
+
       </div>
+
+      {
+        (display) ? <Bonus_modal setdisplay={setdisplay} /> : null
+      }
+
 
 
     </>
