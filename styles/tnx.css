@@ -496,7 +496,7 @@ body {
         background-color: white;
         width: 90%;
         height: 45%;
-        border-radius: 15px;
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;

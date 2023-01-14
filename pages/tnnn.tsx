@@ -5,9 +5,11 @@ import { Facebook, Instagram, Linkedin, Twitter } from "react-bootstrap-icons";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Preloader from "../components/preLoader";
+import Bonus_modal from "../components/bonu_modal";
 
 const Tnn = () => {
     const [ref_modal, setRef_modal] = useState(false)
+    const [display, setdisplay] = useState(false)
     const [ref_link, setRef_link] = useState('')
     const [loading, setLoading] = useState("VIEW REFFERALS")
     const [copy, setCopy] = useState("copy")
@@ -15,6 +17,13 @@ const Tnn = () => {
     const [email, setemail] = useState("")
     const [user_email, setuser_email] = useState("")
     const [err, seterr] = useState("")
+    const [show_link_bonus_modal, setshow_link_bonus_modal] = useState(false)
+
+    // link to them other bonus modal
+    const show_link_bonus = () => {
+        setdisplay(true)
+        setRef_modal(false)
+    }
 
 
     useEffect(() => {
@@ -30,6 +39,7 @@ const Tnn = () => {
 
     const hide_ref_modal = () => {
         setRef_modal(false)
+
     }
 
     const show_ref_modal = () => {
@@ -164,7 +174,8 @@ const Tnn = () => {
                                             <p className="tnx_modal_num">{ref_num} <span className="tnx_modal_num_deco">Dokites</span></p>
 
                                             <div className="tnx_modal_num2">
-                                                <p>Keep reffering to increase your bonuses!!</p>
+                                                <p>Keep reffering to increase your <span className="tnx_bonus_link" onClick={show_link_bonus} style={{ color: "blue", cursor: "pointer" }}> bonuses
+                                                </span> !!</p>
                                                 <div className="tnx_modal_num2_deco"></div>
                                             </div>
                                         </div>
@@ -172,7 +183,12 @@ const Tnn = () => {
                                         <h4 className="tnx_modal_ref">Refer someone <span className="tnx_modal_ref_deco">today!</span></h4>
                                     </div>
                                 </div>
-                            ) : null
+
+                            ) : undefined
+                        }
+
+                        {
+                            (display) ? <Bonus_modal setdisplay={setdisplay} /> : null
                         }
                     </>
                 ) : <Preloader />
