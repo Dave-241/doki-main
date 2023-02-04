@@ -22,7 +22,7 @@ const Tnn = () => {
     // link to them other bonus modal
     const show_link_bonus = () => {
         setdisplay(true)
-        setRef_modal(false)
+        setRef_modal(false) 
     }
 
 
