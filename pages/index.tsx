@@ -115,16 +115,12 @@ export default function Home(prop: { refid: any; }) {
     }
   }, [])
 
-
-
   return (
     <>
-      <head>
-        <title>Doki Waitlist</title>
-
-      </head>
+  
       <div className="wrapper">
         <Nav />
+   
         <Hero
           joined={joined}
           setemail={setemail}
