@@ -5,8 +5,8 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <head>
-      <meta property="og:title" content="San Roque 2014 Pollos" />
-<meta property="og:description" content="Programa de fiestas" />
+      <meta property="og:title" content="Doki waitlist" />
+<meta property="og:description" content="Join the waitlist and get amazing offers on launch" />
         <title>DOKI WAITLIST</title>
       </head>
       <body>
